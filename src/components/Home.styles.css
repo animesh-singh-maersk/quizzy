@@ -1,0 +1,42 @@
+.main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: url('hero.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Adjust the alpha channel for the desired opacity */
+    backdrop-filter: blur(10px);
+    /* Adjust the blur radius */
+    z-index: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.MuiInputBase-input {
+    min-width: 350px !important;
+}
+
+.home_input {
+    margin: .6rem 0;
+}
